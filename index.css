@@ -1,0 +1,46 @@
+*{
+  padding: none;
+  margin: none;
+}
+
+body{
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  
+}
+
+.winner{
+  font-size: 50px;
+  font-weight: bold;
+}
+.body{
+  width: 250px;
+  height: 250px ;
+  display: grid;
+  grid-template-columns: repeat(3,80px);
+  grid-template-rows: repeat(3, 80px);
+
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.box3,.box6,.box9{
+  border-right: none;
+}
+
+.box7,.box8,.box9{
+  border-bottom: none;
+}
